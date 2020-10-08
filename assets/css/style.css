@@ -1645,6 +1645,12 @@ section {
   box-shadow: 3px -5px 9px -7px rgba(0,0,0,0.15);
 }
 
+.section-content{
+  display: block;
+  margin:auto;
+  max-width: 1100px;
+}
+
 .footer-top {
   display: flex;
   flex-wrap: wrap;
