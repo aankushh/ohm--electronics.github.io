@@ -602,6 +602,7 @@ section {
   margin: 15px 0 0 0;
   font-size: 32px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .section-title h3 span {
@@ -900,19 +901,20 @@ section {
 .services .icon-box {
   text-align: center;
   border: 1px solid #e2eefd;
-  padding: 80px 20px;
+  padding: 50px 20px;
   transition: all ease-in-out 0.3s;
   background: #fff;
   width: 100%;
+  cursor: pointer;
 }
 
 .services .icon-box .icon {
   margin: 0 auto;
-  width: 64px;
-  height: 64px;
-  background: #f1f6fe;
+  width: 180px;
+  /* height: 120px; */
+  /* background: #f1f6fe; */
   border-radius: 4px;
-  border: 1px solid #deebfd;
+  /* border: 1px solid #deebfd; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -921,15 +923,16 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: teal;
-  font-size: 28px;
+  color: #27c0c0;
+  font-size: 60px;
   transition: ease-in-out 0.3s;
 }
 
 .services .icon-box h4 {
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 15px;
   font-size: 24px;
+  text-transform: capitalize;
 }
 
 .services .icon-box h4 a {
@@ -945,7 +948,7 @@ section {
 
 .services .icon-box:hover {
   border-color: #fff;
-  box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.15);
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover .icon i {
@@ -1499,6 +1502,10 @@ section {
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
   padding: 20px 0 30px 0;
+  transition: all 0.3s ease-in-out;
+}
+.contact .info-box:hover{
+  box-shadow: 0 0 30px rgba(0,0,0, 0.15);
 }
 
 .contact .info-box i {
@@ -1585,7 +1592,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #106eea;
+  border-color: #008080;
 }
 
 .contact .php-email-form input {
@@ -1597,7 +1604,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #106eea;
+  background: #008080;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1606,7 +1613,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #3b8af2;
+  background: #035c5c;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1737,11 +1744,10 @@ section {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
-  -webkit-column-gap: 10px;
-  -moz-column-gap: 10px;
-  column-gap: 10px;
-  margin-top: 10px;
-  overflow: hidden;
+  -webkit-column-gap: 12px;
+  -moz-column-gap: 12px;
+  column-gap: 12px;
+  margin-top: 12px;
 }
 
 .gallery img {
@@ -1749,8 +1755,8 @@ section {
   height: auto;
   transition: 500ms;
   margin-bottom: 10px;
-  opacity: 0.8;
-  transform: scale(1);
+  opacity: 0.7;
+  background-color: #ffffff;
   page-break-inside: avoid;
   /* For Firefox. */
   -webkit-column-break-inside: avoid;
@@ -1761,7 +1767,7 @@ section {
 
 .gallery img:hover {
   opacity: 1;
-  /* transform: scale(1.2); */
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* .modal {
