@@ -1746,7 +1746,6 @@ section {
   -moz-column-gap: 10px;
   column-gap: 10px;
   margin-top: 10px;
-  overflow: hidden;
 }
 
 .gallery img {
@@ -1754,7 +1753,8 @@ section {
   height: auto;
   transition: 500ms;
   margin-bottom: 10px;
-  opacity: 0.8;
+  opacity: 0.7;
+  background-color: #ffffff;
   page-break-inside: avoid;
   /* For Firefox. */
   -webkit-column-break-inside: avoid;
@@ -1765,6 +1765,7 @@ section {
 
 .gallery img:hover {
   opacity: 1;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* .modal {
