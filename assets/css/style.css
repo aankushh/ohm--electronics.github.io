@@ -1501,6 +1501,10 @@ section {
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
   padding: 20px 0 30px 0;
+  transition: all 0.3s ease-in-out;
+}
+.contact .info-box:hover{
+  box-shadow: 0 0 30px rgba(0,0,0, 0.15);
 }
 
 .contact .info-box i {
@@ -1587,7 +1591,7 @@ section {
 }
 
 .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #106eea;
+  border-color: #008080;
 }
 
 .contact .php-email-form input {
@@ -1599,7 +1603,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #106eea;
+  background: #008080;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1608,7 +1612,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #3b8af2;
+  background: #035c5c;
 }
 
 @-webkit-keyframes animate-loading {
