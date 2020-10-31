@@ -616,7 +616,8 @@ section {
 
 @media (min-width: 1024px) {
   .section-title p {
-    width: 50%;
+    width: 75%;
+    margin-bottom: 24px;
   }
 }
 
@@ -789,10 +790,10 @@ section {
   font-size: 15px;
 }
 
-.about .content p:last-child {
-  margin-bottom: 0;
+.about .content p {
+  margin-bottom: 12px;
+  text-align: justify;
 }
-
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
@@ -874,7 +875,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  padding: 15px 0;
+  padding: 0px 0px 50px;
   text-align: center;
 }
 
@@ -1637,7 +1638,7 @@ section {
 /* MY Footer  */
 
 .section-footer {
-  background: #ffffff;
+  background: #f6f9fd;
   margin-top: -10px;
   padding: 30px 70px;
   -webkit-box-shadow: 3px -5px 9px -7px rgba(0,0,0,0.15);
