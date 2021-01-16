@@ -190,7 +190,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 64px;
+  margin: -12px 0px;
 }
 
 @media (max-width: 992px) {
@@ -200,6 +201,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   #header .logo {
     font-size: 28px;
+  }
+  #header .logo img {
+    max-height: 36px;
   }
 }
 
@@ -538,6 +542,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #3b8af2;
 }
 
+.hero__description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -792,6 +804,7 @@ section {
 
 .about .content p {
   margin-bottom: 12px;
+  font-size: 15px;
   text-align: justify;
 }
 /*--------------------------------------------------------------
