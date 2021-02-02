@@ -1770,7 +1770,7 @@ section {
 }
 
 .gallery-img {
-  width: 300px;
+  width: 320px;
   height: auto;
   display: block;
   margin-bottom: 20px;
@@ -1785,7 +1785,7 @@ section {
   left: 0;
   right: 0;
   height: 50px;
-  width: 300px;
+  width: 320px;
   opacity: 0;
   transition: .5s ease;
   background-color: #c4c4c4;
