@@ -892,8 +892,16 @@ section {
   text-align: center;
 }
 
+.brands{
+  overflow-x: scroll;
+}
+
+.brands::-webkit-scrollbar {
+  display: none;
+}
+
 .clients img {
-  max-width: 45%;
+  max-width: 70%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
@@ -901,12 +909,6 @@ section {
 
 .clients img:hover {
   transform: scale(1.15);
-}
-
-@media (max-width: 768px) {
-  .clients img {
-    max-width: 40%;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -1752,8 +1754,6 @@ section {
   }
 }
 
-
-
 .gallery {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -1764,32 +1764,47 @@ section {
   margin-top: 12px;
 }
 
-.gallery img {
+.object-image{
+  position: relative;
   width: 100%;
+}
+
+.gallery-img {
+  width: 300px;
   height: auto;
-  transition: 500ms;
-  margin-bottom: 10px;
-  opacity: 0.7;
+  display: block;
+  margin-bottom: 20px;
   background-color: #ffffff;
-  page-break-inside: avoid;
-  /* For Firefox. */
-  -webkit-column-break-inside: avoid;
-  /* For Chrome & friends. */
-  break-inside: avoid;
-  /* For standard browsers like IE. :-) */
+  padding: 20px;
 }
 
-.gallery img:hover {
+
+.object-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #c4c4c4;
+}
+
+.object-image:hover .object-overlay {
   opacity: 1;
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* .modal {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: center;
-} */
+.gallery-image__text {
+  color: #143A56;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 .modal-img,
 .model-vid {
@@ -1824,11 +1839,6 @@ flex-direction: center;
       column-count: 2;
   }
 
-  .gallery div {
-      margin: 0;
-      width: 200px;
-  }
-
   .modal-dialog {
       margin: 0 8vw;
   }
@@ -1841,8 +1851,4 @@ flex-direction: center;
       column-count: 1;
   }
 
-  .gallery div {
-      margin: 0;
-      width: 200px;
-  }
 }
